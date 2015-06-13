@@ -8,7 +8,7 @@ package lab2;
 import java.util.List;
 
 
-public class AlienWarriorFactory implements warriorFactory {
+public class AlienWarriorAbstractFactory implements WarriorAbstractFactory {
     
     @Override
     public Warrior createWarrior(List<Weapon> bronie, List<Mover> transport, int lvlA, int lvlM, int lvlH) {

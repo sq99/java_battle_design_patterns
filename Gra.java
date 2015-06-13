@@ -135,9 +135,9 @@ public class Gra {
         Topor bron3 = new Topor();
         Pistolet bron4 = new Pistolet();
 
-        bron1.setHitPoints(40);        
-        bron2.setHitPoints(160);
-        bron3.setHitPoints(20);
+//        bron1.setHitPoints(40);        
+//        bron2.setHitPoints(160);
+//        bron3.setHitPoints(20);
         bronie.add(bron1);
         bronie.add(bron2);
         bronie2.add(bron3);
@@ -176,8 +176,14 @@ public class Gra {
         transport2.add(ufo);
         transport2.add(statek);
         
-        warriorFactory f1 = new HumanWarriorFactory();
-        warriorFactory f2 = new AlienWarriorFactory();
+        WarriorAbstractFactory f1 = new HumanWarriorAbstractFactory();
+        WarriorAbstractFactory f2 = new AlienWarriorAbstractFactory();
+        
+        Warrior c1 = f1.createWarrior(bronie, transport, 100, 100, 1); 
+        Warrior c2 = f1.createWarrior(bronie, transport, 100, 100, 1); 
+        Warrior c3 = f1.createWarrior(bronie, transport, 100, 100, 1); 
+        Warrior c4 = f1.createWarrior(bronie, transport, 100, 100, 1); 
+        Warrior c5 = f1.createWarrior(bronie, transport, 100, 100, 1); 
         
 
             
@@ -190,11 +196,17 @@ public class Gra {
 //        
 //        Czlowiek c5 = new Czlowiek(bronie, transport, 100, 100, 1);
        
-//        c1.setPos(1,2);
-//        c2.setPos(1,4);
-//        c3.setPos(1,6);
-//        c4.setPos(1,8);
-//        c5.setPos(1,10);
+        c1.setPos(1,2);
+        c2.setPos(1,4);
+        c3.setPos(1,6);
+        c4.setPos(1,8);
+        c5.setPos(1,10);
+        
+        Warrior a1 = f2.createWarrior(bronie2, transport2, 100, 100, 1); 
+        Warrior a2 = f2.createWarrior(bronie2, transport2, 100, 100, 1); 
+        Warrior a3 = f2.createWarrior(bronie2, transport2, 100, 100, 1); 
+        Warrior a4 = f2.createWarrior(bronie2, transport2, 100, 100, 1); 
+        Warrior a5 = f2.createWarrior(bronie2, transport2, 100, 100, 1); 
 
 //        Alien a1 = new Alien(bronie2, transport2, 100, 100, 1);
 //        Alien a2 = new Alien(bronie2, transport2, 100, 100, 1);
@@ -202,25 +214,25 @@ public class Gra {
 //        Alien a4 = new Alien(bronie2, transport2, 100, 100, 1);
 //        Alien a5 = new Alien(bronie2, transport2, 100, 100, 1);
         
-//        a1.setPos(10, 2);
-//        a2.setPos(10, 4);
-//        a3.setPos(10, 6);
-//        a4.setPos(10, 8);
-//        a5.setPos(10, 10);
-//
-//     
-//        p1.addWarrior(c1);
-//        p1.addWarrior(c2);
-//        p1.addWarrior(c3);
-//        p1.addWarrior(c4);
-//        p1.addWarrior(c5);
-//
-//       
-//        p2.addWarrior(a1);
-//        p2.addWarrior(a2);
-//        p2.addWarrior(a3);
-//        p2.addWarrior(a4);
-//        p2.addWarrior(a5);
+        a1.setPos(10, 2);
+        a2.setPos(10, 4);
+        a3.setPos(10, 6);
+        a4.setPos(10, 8);
+        a5.setPos(10, 10);
+
+     
+        p1.addWarrior(c1);
+        p1.addWarrior(c2);
+        p1.addWarrior(c3);
+        p1.addWarrior(c4);
+        p1.addWarrior(c5);
+
+       
+        p2.addWarrior(a1);
+        p2.addWarrior(a2);
+        p2.addWarrior(a3);
+        p2.addWarrior(a4);
+        p2.addWarrior(a5);
         //int ilosc_rund = 0;
    }
    

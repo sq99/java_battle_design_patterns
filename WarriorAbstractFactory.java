@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author serq9_000
  */
-public interface warriorFactory {
+public interface WarriorAbstractFactory {
     public Warrior createWarrior(List<Weapon> bronie, List<Mover> transport, int lvlA, int lvlM, int lvlH);
     
 }

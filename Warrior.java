@@ -79,7 +79,7 @@ public class Warrior { // extends Observable {
         this.pointsHealth = 100;
         classname = "warrior";
         this.cuda = 0;
-        this.stan = new FullHP(); 
+        this.stan = new FullHPState(); 
         
         //this.getStan();
  

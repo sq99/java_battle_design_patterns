@@ -9,10 +9,8 @@ package lab2;
  *
  * @author serq9_000
  */
-public class FullHP extends State{
+public class WoundedState extends State{
     public void zwrocStan(Warrior w){
-        if(w.getPointsHealth() == 100)
-        System.out.print("Wojownik jest w pelnym zdrowiu\n");
+        System.out.print("Wojownik zostal zaatakowany i jest ranny\n");
     }
-    
 }
