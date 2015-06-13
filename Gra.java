@@ -176,48 +176,51 @@ public class Gra {
         transport2.add(ufo);
         transport2.add(statek);
         
-       
+        warriorFactory f1 = new HumanWarriorFactory();
+        warriorFactory f2 = new AlienWarriorFactory();
+        
+
             
-        Czlowiek c1 = new Czlowiek(bronie, transport, 100, 100, 1);
-        Czlowiek c2 = new Czlowiek(bronie, transport, 100, 100, 1);
-        Czlowiek c3 = new Czlowiek(bronie, transport, 100, 100, 1);
-        Czlowiek c4 = new Czlowiek(bronie, transport, 100, 100, 1);
-        
-        
-        
-        Czlowiek c5 = new Czlowiek(bronie, transport, 100, 100, 1);
+//        Czlowiek c1 = new Czlowiek(bronie, transport, 100, 100, 1);
+//        Czlowiek c2 = new Czlowiek(bronie, transport, 100, 100, 1);
+//        Czlowiek c3 = new Czlowiek(bronie, transport, 100, 100, 1);
+//        Czlowiek c4 = new Czlowiek(bronie, transport, 100, 100, 1);
+//        
+//        
+//        
+//        Czlowiek c5 = new Czlowiek(bronie, transport, 100, 100, 1);
        
-        c1.setPos(1,2);
-        c2.setPos(1,4);
-        c3.setPos(1,6);
-        c4.setPos(1,8);
-        c5.setPos(1,10);
+//        c1.setPos(1,2);
+//        c2.setPos(1,4);
+//        c3.setPos(1,6);
+//        c4.setPos(1,8);
+//        c5.setPos(1,10);
 
-        Alien a1 = new Alien(bronie2, transport2, 100, 100, 1);
-        Alien a2 = new Alien(bronie2, transport2, 100, 100, 1);
-        Alien a3 = new Alien(bronie2, transport2, 100, 100, 1);
-        Alien a4 = new Alien(bronie2, transport2, 100, 100, 1);
-        Alien a5 = new Alien(bronie2, transport2, 100, 100, 1);
+//        Alien a1 = new Alien(bronie2, transport2, 100, 100, 1);
+//        Alien a2 = new Alien(bronie2, transport2, 100, 100, 1);
+//        Alien a3 = new Alien(bronie2, transport2, 100, 100, 1);
+//        Alien a4 = new Alien(bronie2, transport2, 100, 100, 1);
+//        Alien a5 = new Alien(bronie2, transport2, 100, 100, 1);
         
-        a1.setPos(10, 2);
-        a2.setPos(10, 4);
-        a3.setPos(10, 6);
-        a4.setPos(10, 8);
-        a5.setPos(10, 10);
-
-     
-        p1.addWarrior(c1);
-        p1.addWarrior(c2);
-        p1.addWarrior(c3);
-        p1.addWarrior(c4);
-        p1.addWarrior(c5);
-
-       
-        p2.addWarrior(a1);
-        p2.addWarrior(a2);
-        p2.addWarrior(a3);
-        p2.addWarrior(a4);
-        p2.addWarrior(a5);
+//        a1.setPos(10, 2);
+//        a2.setPos(10, 4);
+//        a3.setPos(10, 6);
+//        a4.setPos(10, 8);
+//        a5.setPos(10, 10);
+//
+//     
+//        p1.addWarrior(c1);
+//        p1.addWarrior(c2);
+//        p1.addWarrior(c3);
+//        p1.addWarrior(c4);
+//        p1.addWarrior(c5);
+//
+//       
+//        p2.addWarrior(a1);
+//        p2.addWarrior(a2);
+//        p2.addWarrior(a3);
+//        p2.addWarrior(a4);
+//        p2.addWarrior(a5);
         //int ilosc_rund = 0;
    }
    
