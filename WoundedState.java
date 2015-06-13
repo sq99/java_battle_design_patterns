@@ -9,7 +9,8 @@ package lab2;
  *
  * @author serq9_000
  */
-public class WoundedState extends State{
+public class WoundedState implements State{
+    @Override
     public void zwrocStan(Warrior w){
         System.out.print("Wojownik zostal zaatakowany i jest ranny\n");
     }

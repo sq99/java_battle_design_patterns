@@ -9,9 +9,10 @@ package lab2;
  *
  * @author serq9_000
  */
-public class FullHPState extends State{
+public class FullHPState implements State{
+    @Override
     public void zwrocStan(Warrior w){
-        if(w.getPointsHealth() == 100)
+        //if(w.getPointsHealth() == 100)
         System.out.print("Wojownik jest w pelnym zdrowiu\n");
     }
     

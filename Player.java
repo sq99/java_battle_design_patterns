@@ -75,9 +75,12 @@ public class Player extends Observable {
        for (int i = 0; i< this.getCount();i++){
            
                 team.get(i).setPointsHealth(team.get(i).getPointsHealth()+x);
-                if(team.get(i).getPointsHealth() >= 100)
+                if(team.get(i).getPointsHealth() >= 100){
                     team.get(i).setPointsHealth(100);
+                    State fulhp = new FullHPState();
+                    team.get(i).zmienStan(fulhp);
           }
+       }
       setChanged();
       notifyObservers(Akcja.OSWIECONY);
       clearChanged();

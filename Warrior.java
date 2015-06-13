@@ -101,6 +101,11 @@ public class Warrior { // extends Observable {
         this.stan.zwrocStan(this);
     }
     
+    public void zmienStan(State nowy)
+    {
+        this.stan = nowy;
+    }
+    
     /**
      * @return the pointsAttack
      */
@@ -186,6 +191,8 @@ public int atakuje = 0;
         if (Math.abs(Defender.getPos().getX() - this.getPos().getX()) == 1 && Math.abs(Defender.getPos().getY() - this.getPos().getY()) == 1) {
             atakuje = 1;
             Defender.setPointsHealth(Defender.getPointsHealth() - this.getPointsAttack());
+            State trafiony = new WoundedState();
+            Defender.zmienStan(trafiony);
             Defender.getStan();
 
             if (Defender.getPointsHealth() <= 0) {
@@ -247,6 +254,8 @@ public int atakuje = 0;
         if (Math.abs(Defender.getPos().getX() - this.getPos().getX()) <= 1 && Math.abs(Defender.getPos().getY() - this.getPos().getY()) <= 1) {
             atakuje = 1;
             Defender.setPointsHealth(Defender.getPointsHealth() - this.getPointsAttack());
+            State trafiony = new WoundedState();
+            Defender.zmienStan(trafiony);
             Defender.getStan();
 
             if (Defender.getPointsHealth() <= 0) {

@@ -9,7 +9,7 @@ package lab2;
  *
  * @author serq9_000
  */
-public abstract class State {
-    public abstract void zwrocStan(Warrior w);
+public interface State {
+    public void zwrocStan(Warrior w);
     
 }
